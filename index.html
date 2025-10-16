@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryan Cielo CV/RESUME</title>
+
+  <style>
+  /* ✅ Show left section on mobile even with w3-hide-small */
+  @media (max-width: 600px) {
+    .w3-hide-small {
+      display: block !important;
+    }
+  }
+
+  /* Optional: make it stack properly on mobile */
+  @media (max-width: 600px) {
+    .w3-quarter, .w3-threequarter {
+      width: 100% !important;
+      display: block;
+    }
+  }
+</style>
+
+  <!-- W3.CSS and Fonts -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS and Icons -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+
+  <!-- ✅ Apply Montserrat font globally -->
+  <style>
+    html, body {
+      font-family: 'Montserrat', sans-serif !important;
+    }
+
+    /* Override W3.CSS built-in font classes */
+    .w3-cursive, .w3-serif, .w3-sans-serif {
+      font-family: 'Montserrat', sans-serif !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ MOBILE NAVIGATION MOVED TO VERY TOP -->
+  <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large w3-sticky w3-white" style="top:0; z-index:1000;">
+    <a href="#home" class="w3-bar-item w3-button w3-hover-none">CURRICULUM VITAE</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right" onclick="toggleNavigation()">☰</a>
+  </div>
+
+  <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-white w3-border-bottom w3-animate-top">
+    <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar 
+       w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">ABOUT</a>
+    <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar 
+       w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">RESUME</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar 
+       w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CONTACT</a>
+  </div>
+
+  <!-- PAGE CONTENT -->
+  <section class="w3-row">
+
+    <!-- SOCIAL SECTION (LEFT SIDE) -->
+<section class="w3-quarter w3-center w3-padding w3-hide-small" 
+         style="background: linear-gradient(180deg, #fff7e6 0%, #ffeccf 100%);
+                min-height: 100vh; 
+                box-shadow: 2px 0 10px rgba(0,0,0,0.1);">
+  <img src="image/UCU_5168.jpg"
+       class="w3-circle w3-border w3-border-sand"
+       style="border-width:3px; width:200px; height:200px;"
+       alt="Avatar">
+
+  <div class="w3-margin-top">
+    <a href="https://facebook.com/ryncielo" target="_blank" class="w3-text-teal w3-hover-text-amber w3-margin-right">
+      <i data-feather="facebook"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/ryan-cielo" target="_blank" class="w3-text-teal w3-hover-text-amber w3-margin-right">
+      <i data-feather="linkedin"></i>
+    </a>
+    <a href="https://ryan_cielo.jobs180.com" target="_blank" class="w3-text-teal w3-hover-text-amber">
+      <i data-feather="briefcase"></i>
+    </a>
+  </div>
+
+  <div class="w3-margin-top">
+    <a href="./resume.pdf" target="_blank" download="resume.pdf"
+       class="w3-button w3-amber w3-round w3-hover-deep-orange w3-margin-top">
+      <i data-feather="download"></i>
+      <span>Download CV</span>
+    </a>
+  </div>
+</section>
+
+
+    <!-- CV CONTENT SECTION (RIGHT SIDE) -->
+    <section class="w3-threequarter w3-padding-large w3-right">
+
+      <!-- DESKTOP NAVIGATION -->
+      <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white 
+           w3-bottombar w3-hover-border-green">CURRICULUM VITAE</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white 
+           w3-bottombar w3-hover-border-green w3-hover-text-green w3-right">CONTACT</a>
+        <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white 
+           w3-bottombar w3-hover-border-green w3-hover-text-green w3-right">RESUME</a>
+        <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white 
+           w3-bottombar w3-hover-border-green w3-hover-text-green w3-right">ABOUT</a>
+      </div>
+
+      <!-- CONTENT SECTIONS -->
+      <div class="content-container w3-margin-top-2">
+
+        <!-- HOME -->
+        <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+          <p style="font-style: italic; font-size:x-large;">
+            "Sometimes the process is painful and hard. But don't forget that when God is silent, He's doing something for you."
+          </p>
+          <h1>Ryan Cielo (22)</h1>
+          <h2>Data Encoder</h2>
+        </div>
+
+        <!-- ABOUT -->
+        <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+          <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h2>
+          <p class="w3-margin-top-2">
+            To acquire valuable knowledge and skills to complement those that I have learned from school, 
+            on-the-job training and cash-for-work program in an actual job environment. 
+            In return, I offer my service and determination to be an asset to your company.
+          </p>
+        </div>
+
+        <!-- RESUME -->
+        <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
+          <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUME</h2>
+
+          <!-- WORK EXPERIENCE -->
+          <h3 class="w3-border-amber">WORK EXPERIENCE</h3>
+          <div>
+            <h4>Data Encoder | (On-the-job-training)</h4>
+            <p>City Health Office I, Urdaneta City, Pangasinan</p>
+            <p>February 10, 2025 - May 5, 2025</p>
+            <ul class="w3-ul" style="font-weight: 500;">
+              <li>Provide assistance to patients regarding their concerns</li>
+              <li>Entered patients’ information accurately</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Encoder / Event Staff | KALAHI-CIDSS (Cash-For-Work Program)</h4>
+            <p>June 2, 2025 - August 8, 2025</p>
+            <ul class="w3-ul" style="font-weight: 500;">
+              <li>Entered summary reports accurately</li>
+              <li>Facilitate the process of the events</li>
+              <li>Provided assistance to the participants of the events</li>
+              <li>Handled venue setup and clerical work</li>
+              <li>Conduct an inventory update on materials, tools and equipment's</li>
+            </ul>
+          </div>
+
+          <!-- EDUCATION -->
+          <h3 class="w3-border-amber w3-margin-top">EDUCATION</h3>
+          <h4>Bachelor of Science in Information Technology</h4>
+          <p>Urdaneta City University</p>
+          <p>August 2021 - July 24, 2025</p>
+          <h4>TVL/ICT (Information and Communication Technology)</h4>
+          <p>Umingan National High School</p>
+          <p>June 2019 - March 2021</p>
+
+          <!-- SKILLS -->
+          <h3 class="w3-border-amber w3-margin-top">SKILLS</h3>
+          <ul class="w3-ul" style="font-weight: 500;">
+            <li>Figma</li>
+            <li>Canva</li>
+            <li>Microsoft Excel</li>
+            <li>Microsoft Word</li>
+          </ul>
+
+          <h4>Soft Skills</h4>
+          <ul class="w3-ul" style="font-weight: 500;">
+            <li>Time Management</li>
+            <li>Patient</li>
+            <li>Organized</li>
+            <li>Multi-tasking</li>
+          </ul>
+
+          <!-- CERTIFICATIONS -->
+        <h3 class="w3-border-amber w3-margin-top">CERTIFICATIONS</h3>
+        <div class="w3-row-padding w3-margin-top">
+          <div class="w3-third w3-center">
+            <img src="image/Hardware_and_Upgrade_Support _CERTIFICATE.jpg" alt="Hardware and Upgrade Support Certificate"
+                class="w3-image w3-border w3-round-large" style="max-width:100%; height:auto;">
+                <p class="w3-small w3-text-gray">Hardware and Upgrade Support</p>
+        </div>
+        <div class="w3-third w3-center">
+          <img src="image/Intro_to_Cybersecurity_CERTIFICATE.jpg" alt="Introduction to Cybersecurity Certificate"
+              class="w3-image w3-border w3-round-large" style="max-width:100%; height:auto;">
+              <p class="w3-small w3-text-gray">Introduction to Cybersecurity</p>
+        </div>
+        <div class="w3-third w3-center">
+          <img src="image/Intro_to_HTML_CERTIFICATE.jpg" alt="Introduction to HTML Certificate"
+            class="w3-image w3-border w3-round-large" style="max-width:100%; height: 222px;">
+            <p class="w3-small w3-text-gray">Introduction to HTML</p>
+        </div>
+        </div>
+
+          <!-- ACHIEVEMENTS -->
+          <h3 class="w3-border-amber w3-margin-top">ACHIEVEMENTS</h3>
+          <ul class="w3-ul" style="font-weight: 500;">
+            <li>Created my first project Cielo Motoshop app using Flutter</li>
+            <li>Finished capstone project AIGesture: Advanced Interactive Hand Gesture Recognition System for Urdaneta City National High School</li>
+            <li>Created my first 3D character and 3D map using blender</li>
+          </ul>
+
+          <!-- HOBBIES -->
+          <h3 class="w3-border-amber w3-margin-top">HOBBIES AND INTERESTS</h3>
+          <ul class="w3-ul" style="font-weight: 500;">
+            <li>Watching movies</li>
+            <li>Playing board games</li>
+          </ul>
+
+          <!-- CONTACT -->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">CONTACT DETAILS</h2>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p><b>Name:</b> Ryan Cielo</p>
+              <p><b>Address:</b> Purok 3, Cadiz, Umingan, Pangasinan</p>
+              <p><b>Phone:</b> +63 927-966-8321</p>
+              <p><b>Email:</b> ryancielo02@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>© 2025 - Ryan Cielo</p>
+        </footer>
+      </div>
+    </section>
+  </section>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    // Toggle Mobile Navigation
+    function toggleNavigation() {
+      let nav = document.getElementById("mobile-nav");
+      nav.classList.toggle("w3-show");
+    }
+    // Feather Icons
+    feather.replace();
+  </script>
+
+</body>
+</html>
